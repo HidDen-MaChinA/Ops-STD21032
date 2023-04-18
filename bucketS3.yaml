@@ -1,0 +1,17 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: test for this day brrr
+
+Parameters:
+    TheFirstTry:
+        type: string
+        default: "STD21032"
+Resources:
+  BucketS3:
+    Type: "AWS::S3::Bucket"
+    Properties:
+      BucketName: 
+  BucketSSM:
+    Type: AWS::SSM::Parameter
+    Properties: 
+    Name: bucketName
+    Value: !GetAtt BucketS3.Arn
