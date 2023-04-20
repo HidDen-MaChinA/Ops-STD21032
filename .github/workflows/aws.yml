@@ -28,4 +28,4 @@ jobs:
       uses: aws-actions/aws-cloudformation-github-deploy@v1
       with:
           name: cloud formation for testing
-          template: bucketS3.yaml
+          template: ../../bucketS3.yaml
