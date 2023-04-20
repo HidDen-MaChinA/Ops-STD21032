@@ -9,7 +9,7 @@ Resources:
   BucketS3:
     Type: "AWS::S3::Bucket"
     Properties:
-      BucketName: 
+      BucketName: !ref TheFirstTry 
   BucketSSM:
     Type: AWS::SSM::Parameter
     Properties: 
